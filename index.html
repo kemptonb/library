@@ -10,41 +10,40 @@
 
 <body>
     <div id="contaier">
-    <form action="#" method="post" name="form_name" id="form_id" class="form_class">
-        <h2>Add a Book</h2>
-        <input type="text" name="title" id="title" placeholder="Book" />
-        <input type="text" name="author" id="author" placeholder="Author" />
-        <input type="text" name="pages" id="pages" placeholder="Pages" />
-        <label>
-            <select type="text" name="read" id="read">
-                <option value="Unread">Unread</option>
-                <option value="Read">Read</option>
-              </select>
-        </label>
-        <input type="button" name="submit_id" id="btn_id" value="Add" onclick="addBookToLibrary()" />
-    </form>
+        <form action="#" method="post" name="form_name" id="form_id" class="form_class">
+            <h3>Library</h3>
+            <p>Add a Book</p>
+            <input type="text" name="title" id="title" placeholder="Book" />
+            <input type="text" name="author" id="author" placeholder="Author" />
+            <label>
+                <select type="text" name="read" id="read">
+                    <option value="Unread">Unread</option>
+                    <option value="Read">Read</option>
+                </select>
+            </label>
+            <input type="button" name="submit_id" id="btn_id" value="Add" onclick="addBookToLibrary()" />
+        </form>
 
-    <table class="twelve columns">
-        <tbody>
-            <tr>
-                <th>Name</th>
-                <th>Author</th>
-                <th>Status</th>
-                <th></th>
-            </tr>
-        </tbody>
-        <tbody id="book-table-body">
-            <tr>
-                <td id="defaultBook"></td>
-                <td id="defaultAuthor"></td>
-                <td><button class="status-button">read</button></td>
-                <td><button class="delete">delete</button></td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    </div><!--close contaier-->
+        <table class="12-col">
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                </tr>
+            </tbody>
+            <tbody id="table-body">
+                <tr>
+                    <td id="defaultBook">x</td>
+                    <td id="defaultAuthor">y</td>
+                    <td><button id="status-button">read/unread</button></td>
+                    <td><button id="delete">delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--close contaier-->
     <script src="main.js"></script>
 </body>
 
