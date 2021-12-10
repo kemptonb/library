@@ -28,3 +28,28 @@ select {
 #btn_id {
   width: 5em;
 }
+
+.table-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.titles {
+  margin-top: 2em;
+}
+
+tr {
+  display: flex;
+
+}
+
+td {
+ display: inline-flex;
+ margin-right: 3em;
+}
+
+
+td button {
+  width: 5em;
+  height: 1.5em;
+}
