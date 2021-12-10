@@ -12,9 +12,10 @@
     <div id="contaier">
         <form action="#" method="post" name="form_name" id="form_id" class="form_class">
             <h2>Library</h2>
-            <p>Add a Book</p>
-            <input type="text" name="title" id="title" placeholder="Book" />
-            <input type="text" name="author" id="author" placeholder="Author" />
+            <p><strong>Add a Book</strong></p>
+            <h5 id="alertError"></h5>
+            <input type="text" name="title" id="title" placeholder="Book" required/>
+            <input type="text" name="author" id="author" placeholder="Author" required/>
             <label>
                 <select type="text" name="read" id="read">
                     <option value="Unread">Unread</option>
@@ -25,7 +26,6 @@
         </form>
 
         <table class="table-main">
-           
             <tbody id="table-body">
                 <tr class="bold">
                     <td>Name</td>
