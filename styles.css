@@ -14,7 +14,6 @@ html, body {
  flex-direction: column;
  justify-content: center;
  align-items: center;
- margin: 3em;
 }
 
 input,
@@ -71,11 +70,17 @@ td {
 }
 
 form {
-  margin-top: 10em;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
 }
 
 #table-body{
   visibility: hidden;
+}
+
+.header {
+  margin-top: 7em;
 }
 
 

@@ -15,7 +15,7 @@ function Book(title, author, read) {
 
 }
 
-//submit form with id function.
+//submit form with id function
 function addBookToLibrary() {
   //check form for empty inputs
   let checker = checkform(form);
