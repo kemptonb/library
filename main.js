@@ -9,7 +9,7 @@ function Book(title, author, read) {
   this.title = title;
   this.author = author;
   this.read = read;
-  
+
 }
 
 //submit form with id function.
@@ -20,7 +20,8 @@ function addBookToLibrary() {
 
   //send data to constructor
   let book = new Book(title, author, read);
-  myLibrary.push(book)
+  myLibrary.push(book);
+  console.log(myLibrary);
   tableCont();
 
 }
@@ -33,6 +34,7 @@ function tableCont() {
       continue;
 
     } else {
+      tableBody.style.visibility = "visible";  
       //DOM unique var creation and manipulation
       //bool to skip loop set
       this["rowBool" + i] = true;
@@ -68,10 +70,18 @@ function tableCont() {
         let element = document.getElementById(['readUnread' + i]);
         if (element.textContent.toLowerCase() == "unread") {
           element.textContent = "Read";
+          let readStatus = myLibrary[i];
+          readStatus.read = "Read";
+          console.log(myLibrary);
+
         } else {
-          element.textContent = "Unread";
-        }
-      });
+            element.textContent = "Unread";
+            let readStatus = myLibrary[i];
+            readStatus.read = "Unread";
+            console.log(myLibrary);
+
+          }
+        });
 
       //cell 4 delete button
       this["cell4" + i] = document.createElement('td');

@@ -5,6 +5,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    font-family: monospace;
 }
 
 #container {
@@ -12,44 +14,75 @@ html, body {
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ margin: 3em;
 }
 
 input,
 select {
-    width: 15em;
+    width: 30%;
     height: 25px;
-    margin: 2px;
+    margin: none;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
 }
 
-#btn_id {
+select {
   width: 5em;
 }
 
-.table-main {
-  display: flex;
-  flex-direction: column;
+#btn_id {
+  width: 5em;
 }
-
-.titles {
-  margin-top: 2em;
-}
-
-tr {
-  display: flex;
-
-}
-
-td {
- display: inline-flex;
- margin-right: 3em;
-}
-
 
 td button {
   width: 5em;
   height: 1.5em;
 }
+
+table {
+  margin-top: 3em;
+}
+
+tr {
+  padding: 3em 0em 3em 0em
+}
+
+tr > td:nth-child(1){
+  padding-right: 5em;
+  margin-right: 1em;
+}
+
+tr > td:nth-child(2){
+  padding-right: 5em;
+}
+
+tr > td:nth-child(3){
+  padding-right: 5em;
+}
+
+td {
+  padding-bottom: 1em;
+}
+
+.bold > td {
+  font-weight: bold;
+}
+
+form {
+  margin-top: 10em;
+}
+
+#table-body{
+  visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
